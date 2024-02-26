@@ -75,6 +75,10 @@ form input.b2[type=button]:hover{
     background-color: rgba(55, 55, 55, 0.6);
 }
 
+form input[type=checkbox]{
+    cursor: pointer;
+}
+
 form p{
     text-align: center;
     padding: 25px;
@@ -88,7 +92,7 @@ form p:hover{
 
 footer{
     width: 100%;
-    height: 250px;
+    height: 260px;
     margin-top: 50px;
     background-color: rgba(0,0,0,0.6);  
 }
@@ -104,9 +108,52 @@ footer ul li{
 
 footer a{
     color: #ccc;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 footer a:hover{
     color: #909090;
-}  
+}
+
+@media screen and (max-width: 1250px){
+    footer ul{
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 20px;
+    }
+
+    footer ul li{
+        margin: 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    div.logo img{
+        width: 90px;
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-image: none;
+        background-color: black;
+    }
+
+    section form{
+        width: 100%;
+        height: auto;
+    }
+
+    footer{
+        border-top: 1px solid #333;
+    }
+
+    footer ul li{
+        margin: 30px;
+    }
+
+    
+}
